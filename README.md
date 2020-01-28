@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Terceiro app -> https://terceiro-app-rails.herokuapp.com/
 
-Things you may want to cover:
+11)
+def inicio end, def ajuda end. Ambas vazias.
 
-* Ruby version
+12)
+Páginas estáticas -> ajuda.html.erb, inicio.html.erb
 
-* System dependencies
+14)2 testes. 1º should get inicio, 2º should get ajuda.
 
-* Configuration
+15)
+2 execuções, 2 assertions, 0 erros.
 
-* Database creation
+16)
+Error: PaginasEstaticasControllerTest#test_should_get_sobre: NameError: undefined local variable or method `paginas_estaticas_sobre_url' for #<PaginasEstaticasControllerTest:0x00007fe96cd40b90>     test/controllers/paginas_estaticas_controller_test.rb:15:in `block in <class:PaginasEstaticasControllerTest>'
 
-* Database initialization
+17)
+Sim, Error: PaginasEstaticasControllerTest#test_should_get_sobre: AbstractController::ActionNotFound: The action 'sobre' could not be found for PaginasEstaticasController     test/controllers/paginas_estaticas_controller_test.rb:15:in `block in <class:PaginasEstaticasControllerTest>'
 
-* How to run the test suite
+18)
+Error: PaginasEstaticasControllerTest#test_should_get_sobre: ActionController::MissingExactTemplate: PaginasEstaticasController#sobre is missing a template for request formats: text/html     test/controllers/paginas_estaticas_controller_test.rb:15:in `block in <class:PaginasEstaticasControllerTest>'
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+20)
+Não existe mais erro. 3 execuções, 3 assertions, 0 erros.
