@@ -10,6 +10,31 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <%= link_to 'terceiro app', '/paginas_estaticas/inicio', id: 'logo' %>
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to 'Início', '#' %></li>
+            <li><%= link_to 'Ajuda', '/paginas_estaticas/ajuda' %></li>
+            <li><%= link_to 'Entrar', '#' %></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <%= yield %>
+    </div>
+    <footer class="navbar navbar-fixed-bottom navbar-inverse">
+      <small>
+        Terceiro App criado por Thiago
+      </small>
+      <nav>
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to 'Sobre', '/paginas_estaticas/sobre' %></li>
+          <li><%= link_to 'Contato', '/paginas_estaticas/contato' %></li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
